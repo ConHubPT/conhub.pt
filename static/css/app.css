@@ -1,0 +1,259 @@
+@font-face {
+  font-family: ClearSans;
+  src: url('../fonts/ClearSans-Regular.eot');
+  src: url('../fonts/ClearSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-Regular.woff') format('woff'),
+    url('../fonts/ClearSans-Regular.ttf') format('truetype'),
+    url('../fonts/ClearSans-Regular.svg#open_sans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ClearSans;
+  src: url('../fonts/ClearSans-Bold.eot');
+  src: url('../fonts/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-Bold.woff') format('woff'),
+    url('../fonts/ClearSans-Bold.ttf') format('truetype'),
+    url('../fonts/ClearSans-Bold.svg#open_sansbold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: ClearSans;
+  src: url('../fonts/ClearSans-BoldItalic.eot');
+  src: url('../fonts/ClearSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-BoldItalic.woff') format('woff'),
+    url('../fonts/ClearSans-BoldItalic.ttf') format('truetype'),
+    url('../fonts/ClearSans-BoldItalic.svg#open_sansbold_italic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: ClearSans;
+  src: url('../fonts/ClearSans-Italic.eot');
+  src: url('../fonts/ClearSans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-Italic.woff') format('woff'),
+    url('../fonts/ClearSans-Italic.ttf') format('truetype'),
+    url('../fonts/ClearSans-Italic.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: ClearSans;
+  background-color: #fafafa;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .wide .container {
+    max-width: 1150px;
+  }
+}
+
+a {
+  color: #800;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: black;
+  text-decoration: none;
+}
+
+footer a,
+header a,
+nav a,
+.card-footer a {
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav a.text-dark:hover,
+nav a.text-dark:focus {
+  color: #800 !important;
+}
+
+.avatar {
+  max-width: 250px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin-top: 15px;
+}
+
+.alumni {
+  opacity: 0.6;
+}
+
+.person-avatar {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 15px;
+  float: left;
+}
+
+.person-name {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.person-links {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+
+.person-links a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.page {
+  min-height: 100%;
+  margin-bottom: -92px;
+}
+
+.page:after {
+  content: '';
+  display: block;
+  height: 92px;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.section {
+  text-decoration: underline;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.service-img {
+  max-height: 30px;
+  float: right;
+  padding-right: 10px;
+}
+
+.tools h5 {
+  border-bottom: 1px solid gray;
+}
+
+.tool-img {
+  max-height: 80px;
+}
+
+.tools a.btn {
+  text-decoration: none;
+}
+
+.card-footer {
+  padding: 0 1.25rem 1rem 1.25rem;
+  background-color: transparent;
+  border-top: none;
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+}
+
+.post img.float-left {
+  margin: inherit;
+}
+
+.beta {
+  color: gray;
+}
+
+pre,
+code {
+  background-color: #f6f8fa;
+  line-height: 1.45;
+  font-size: 0.9rem;
+  padding: 5px;
+  color: #e83e8c;
+}
+
+pre > code {
+  padding: 0;
+}
+
+.extra a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-link {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-col a,
+.footer-avatar {
+  max-width: 80px;
+}

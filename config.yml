@@ -1,0 +1,6 @@
+sitename: ConHubPT
+author: Administrador
+rooturl: https://conhub.pt/
+logo: logo.png
+license: Creative Commons Attribution-ShareAlike
+output: public
